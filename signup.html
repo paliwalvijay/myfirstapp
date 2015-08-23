@@ -1,0 +1,71 @@
+<script>
+ function gohome(){
+    var href = "home.html";
+   /* localStorage.setItem(3,document.getElementById("usr").value);
+    localStorage.setItem(4,document.getElementById("pwd").value);
+    document.getElementbyId("test").innerHTML=localStorage.getItem(me);*/
+    window.location = href;	
+ }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BOOKmyBOOK</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+   body {
+    background-color: navy;
+   }
+
+   h1 {
+    color: orange;
+    text-align: center;
+   }
+
+  p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+  }
+  h3{
+	font-family: "Lucida Console";
+	color: white;
+	font-weight: 800;
+    }
+  h2{
+	font-family: "Times New Roman";
+	color: white;
+	font-weight: bold;
+   }
+ </style>
+</head>
+<body>
+ <h2 class="text-center">BooKmyBooK</h2>
+ <h3> Congratulations! You have almost finished ! </h3>
+  <div class="container">
+  <h2 style="font-size: 30px">Sign Up</h2>
+  <p></p>
+  <form role="form">
+    <div class="form-group">
+      <label for="usr" style="color:white; font-size:20px">UserID:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd" style="color:white; font-size:20px" >Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+    <div class="form-group">
+      <label for="pwd1" style="color:white; font-size:20px" >Confirm Password:</label>
+      <input type="password" class="form-control" id="pwd1">
+    </div>
+  </form>
+</div>
+<div>
+<button type="button" class="btn btn-success" style="margin:15px" onclick="gohome()">Sign Up</button>
+</div>
+<p id="test"></p>
+</body>
+</html>

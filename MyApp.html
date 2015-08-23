@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BOOKmyBOOK</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+   body {
+    background-color: navy;
+   }
+
+   h1 {
+    color: orange;
+    text-align: center;
+   }
+
+  p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+  }
+  h3{
+	font-family: "Lucida Console";
+	color: white;
+	font-weight: 800;
+    }
+  h2{
+	font-family: "Times New Roman";
+	color: white;
+	font-weight: bold;
+   }
+ </style>
+<script>
+ function validate(){
+ document.cookie="name=vijay";
+ //document.cookie="pwd="+document.getElementById("pwd").value;
+ alert(document.cookie);
+ document.getElementById("test").innerHTML="dhsbcjd"; 
+}
+</script>
+</head>
+<body>
+ <h2 class="text-center" style="font-size:40px;">BooKmyBooK</h2>
+ <h3>  Hey! If you want to sell or buy a book you are at right place! </h3>
+  <div class="container">
+  <h2 style="font-size: 30px">Sign In</h2>
+  <p></p>
+  <form role="form">
+    <div class="form-group">
+      <label for="usr" style="color:white; font-size:20px">UserID:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd" style="color:white; font-size:20px" >Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+  </form>
+</div>
+<div>
+<a href="#" style="margin:15px; font-size:20px; font-weight:bold;" onclick="validate()">Log In</a>
+<a href="signupDetail.html" style="color:white; font-size:20px; margin:90px;">Sign Up</a>
+</div>
+<p id="test"></p>
+</body>
+</html>

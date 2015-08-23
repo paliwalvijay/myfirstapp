@@ -1,0 +1,62 @@
+<script>
+  function showDetails(){
+   var ls = ";"+document.cookie;
+   alert(document.cookie);
+   var list = ls.split(";"+"name"+"=");
+    document.getElementById("username").innerHTML = "Name : "+list[1];
+  }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BOOKmyBOOK</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+   body {
+    background-color: navy;
+   }
+
+   h1 {
+    color: orange;
+    text-align: center;
+   }
+
+  p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+  }
+  h3{
+	font-family: "Lucida Console";
+	color: white;
+	font-weight: 800;
+    }
+  h2{
+	font-family: "Times New Roman";
+	color: white;
+	font-weight: bold;
+   }
+ </style>
+</head>
+<body onload="showDetails()">
+     <body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">BooKmyBooK</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Add Available Book</a></li>
+        <li><a href="#">Need a book</a></li> 
+        <li><a href="#">Account Details</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+<h2 id="username"></h2>
+</body>
